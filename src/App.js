@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const App = () => {
   return (
     <div className="App">
-      Diploma projecttt
+      <p>Diploma project </p>
     </div>
   );
 }
