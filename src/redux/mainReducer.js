@@ -1,13 +1,15 @@
-//will combine all reducers in future, leave one reducer for now
+import { combineReducers } from "redux"
 
-const initialState = {
-    subjects: [] 
-}
+import auth from "./auth/authReducer";
+import lessons from "./lessons/lessonsReducer";
+import tests from "./tests/testsReducer";
+import groups from "./groups/groupsReducer";
 
-const mainReducer = (state = initialState, action) => {
-    switch(action.type) {
-        default: return state;
-    }
-}
+const mainReducer = combineReducers({
+    auth,
+    lessons,
+    tests,
+    groups,
+});
 
 export default mainReducer;
