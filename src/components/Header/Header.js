@@ -1,14 +1,16 @@
 import React from "react";
-import "../../assets/style/Header/Header.scss";
+
+import "../../assets/style/Header/header.scss";
 import avatar from "../../assets/avatar.png";
 
 const Header = () => {
     return (
-        <div>
-            <header>
-                <section className="headerContainer">
-                    <h1><a href="#">Study<span>Max</span></a></h1>
-                    <nav className="effect">
+            <header className="header">
+                <section className="header_container">
+                    <h1 className="logo">
+                        <a href="#">Study<span>Max</span></a>
+                    </h1>
+                    <nav className="menu_effect">
                         <a href="#">Головна</a>
                         <a href="#">Тести</a>
                         <a href="#">Завдання</a>
@@ -17,10 +19,6 @@ const Header = () => {
                     </nav>
                 </section>
             </header>
-            <div className="fakeBlock">
-                <p>Hello</p>
-            </div>
-        </div>
     );
 };
 
