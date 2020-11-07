@@ -13,7 +13,7 @@
 }
 
 .menu_effect {
-  a {
+  li {
     display: flex;
     position: relative;
     margin: 15px 15px;
@@ -55,7 +55,7 @@
 .menu_effect {
   display: flex;
 
-  a {
+  li {
     padding: 8px 0;
 
     &:after {
